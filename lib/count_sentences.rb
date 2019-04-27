@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    count_sentences_array = self.split
-   count_sentences_array.length 
+    array = self.split
+    array.length 
   end
 end
