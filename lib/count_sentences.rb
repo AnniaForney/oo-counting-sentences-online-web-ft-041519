@@ -3,19 +3,20 @@ require 'pry'
 class String
 
   def sentence?
-    "Hi".end_with?("!")
-    => true 
+    self.end_with?(".")
   end
 
   def question?
-    "How are you?".self_with?("?")
+    self.end_with?("?")
   end
 
   def exclamation?
-    "YO!!!".self_with?("!!!")
+    self.end_with?("!")
   end
 
   def count_sentences
-    
+    count_sentences_array = self.split
+    count_sentences_array.length 
+    return count_sentences 
   end
 end
